@@ -37,7 +37,6 @@ export default function OrgChart() {
 	useEffect(() => {
 		async function getOrg() {
 			try {
-				// const response = await fetch("https://182678e9.test1-7ta.pages.dev/organization-chart");
 				const response = await fetch("/organization-chart");
 				let json = await response.json()
 				const ds = jsonToDatasource(json)
